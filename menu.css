@@ -74,6 +74,7 @@ body {
 .food-image {
   border: 3px solid rgb(218, 137, 32);
   border-radius: 1em;
+  object-fit: cover;
 }
 
 /* Menu name, price, information */
@@ -90,4 +91,36 @@ body {
 .item-details {
   color: #797474;
   text-align: justify;
+}
+
+/* media queries */
+
+/* 768 to 1350 pixels */
+@media screen and (max-width: 1350px) {
+  .menu {
+    width: 36em;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  .menu-container ul li {
+    font-size: small;
+  }
+  .menu {
+    width: 90%;
+  }
+  .menu-item-name {
+    word-spacing: normal;
+    letter-spacing: 1px;
+  }
 }
