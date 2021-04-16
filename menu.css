@@ -124,3 +124,16 @@ body {
     letter-spacing: 1px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 10px;
+  }
+  .menu-container li {
+    font-size: x-small;
+  }
+  .menu-item-name {
+    word-spacing: normal;
+    letter-spacing: normal;
+  }
+}
