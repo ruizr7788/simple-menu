@@ -136,4 +136,8 @@ body {
     word-spacing: normal;
     letter-spacing: normal;
   }
+  .price {
+    display: block;
+    color: rgb(189, 163, 50);
+  }
 }
