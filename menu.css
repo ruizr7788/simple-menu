@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f5f8;
+}
+
+/* top menu styling */
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+.menu-container h1 {
+  font-size: 50px;
+  border-bottom: 4px solid goldenrod;
+}
+
+.menu-options ul {
+  display: flex;
+}
+.btn {
+  list-style: none;
+  margin: 8px;
+  border: 0.5px solid goldenrod;
+  padding: 0.4em 1.3em;
+  border-radius: 0.5em;
+  color: rgb(155, 116, 18);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  box-shadow: 0.5px 0.5px 2px rgb(27, 23, 12);
+}
+.btn:hover {
+  color: white;
+  transition: all 0.2s ease-in-out;
+  border-color: rgb(194, 147, 27);
+  background-color: rgb(194, 147, 27);
+}
+/* end top menu styling */
+
+/* menu styling */
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.menu {
+  display: grid;
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 80vw;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em 2em;
+  margin-bottom: 5em;
+}
+
+.menu-item {
+  display: grid;
+  max-width: 35em;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 1em;
+  position: relative;
+}
+
+/* Image style */
+.food-image {
+  border: 3px solid rgb(218, 137, 32);
+  border-radius: 1em;
+}
+
+/* Menu name, price, information */
+.menu-item-name {
+  border-bottom: 2px dashed rgb(218, 75, 32);
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+.price {
+  position: absolute;
+  right: 0;
+  color: rgb(189, 163, 50);
+}
+.item-details {
+  color: #797474;
+  text-align: justify;
+}
